@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/liquid-landing-2/static/css/main.a617e044.chunk.css",
-    "main.js": "/liquid-landing-2/static/js/main.4c5c7f0f.chunk.js",
-    "main.js.map": "/liquid-landing-2/static/js/main.4c5c7f0f.chunk.js.map",
-    "runtime-main.js": "/liquid-landing-2/static/js/runtime-main.e82376cf.js",
-    "runtime-main.js.map": "/liquid-landing-2/static/js/runtime-main.e82376cf.js.map",
-    "static/js/2.510a502a.chunk.js": "/liquid-landing-2/static/js/2.510a502a.chunk.js",
-    "static/js/2.510a502a.chunk.js.map": "/liquid-landing-2/static/js/2.510a502a.chunk.js.map",
-    "static/js/3.73b32ac0.chunk.js": "/liquid-landing-2/static/js/3.73b32ac0.chunk.js",
-    "static/js/3.73b32ac0.chunk.js.map": "/liquid-landing-2/static/js/3.73b32ac0.chunk.js.map",
+    "main.css": "/liquid-landing-2/static/css/main.45c2364a.chunk.css",
+    "main.js": "/liquid-landing-2/static/js/main.0c2f22f6.chunk.js",
+    "main.js.map": "/liquid-landing-2/static/js/main.0c2f22f6.chunk.js.map",
+    "runtime-main.js": "/liquid-landing-2/static/js/runtime-main.e46d3457.js",
+    "runtime-main.js.map": "/liquid-landing-2/static/js/runtime-main.e46d3457.js.map",
+    "static/js/2.c0263e12.chunk.js": "/liquid-landing-2/static/js/2.c0263e12.chunk.js",
+    "static/js/2.c0263e12.chunk.js.map": "/liquid-landing-2/static/js/2.c0263e12.chunk.js.map",
+    "static/js/3.5a45d0dd.chunk.js": "/liquid-landing-2/static/js/3.5a45d0dd.chunk.js",
+    "static/js/3.5a45d0dd.chunk.js.map": "/liquid-landing-2/static/js/3.5a45d0dd.chunk.js.map",
     "index.html": "/liquid-landing-2/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/liquid-landing-2/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.510a502a.chunk.js.LICENSE.txt": "/liquid-landing-2/static/js/2.510a502a.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/liquid-landing-2/static/media/logo.6ce24c58.svg"
+    "static/css/main.45c2364a.chunk.css.map": "/liquid-landing-2/static/css/main.45c2364a.chunk.css.map",
+    "static/js/2.c0263e12.chunk.js.LICENSE.txt": "/liquid-landing-2/static/js/2.c0263e12.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e82376cf.js",
-    "static/js/2.510a502a.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.4c5c7f0f.chunk.js"
+    "static/js/runtime-main.e46d3457.js",
+    "static/js/2.c0263e12.chunk.js",
+    "static/css/main.45c2364a.chunk.css",
+    "static/js/main.0c2f22f6.chunk.js"
   ]
 }
