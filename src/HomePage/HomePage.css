@@ -1,0 +1,843 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,300,700,500");
+.screen textarea:focus,
+.screen input:focus {
+  outline: none;
+}
+
+.screen * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.screen div {
+  -webkit-text-size-adjust: none;
+}
+
+.component-wrapper a {
+  display: contents;
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+.component-wrapper * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.component-wrapper a *,
+.component-wrapper input,
+.component-wrapper video,
+.component-wrapper iframe {
+  pointer-events: auto;
+}
+
+.component-wrapper.not-ready,
+.component-wrapper.not-ready * {
+  visibility: hidden !important;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.full-width-a {
+  width: 100%;
+}
+
+.full-height-a {
+  height: 100%;
+}
+
+.container-center-vertical {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  pointer-events: none;
+}
+
+.container-center-vertical > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.auto-animated div {
+  --z-index: -1;
+  opacity: 0;
+  position: absolute;
+}
+
+.auto-animated .container-center-vertical,
+.auto-animated .container-center-horizontal {
+  opacity: 1;
+}
+
+.overlay {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.overlay.animate-appear {
+  animation: reveal 0.3s ease-in-out 1 normal forwards;
+  display: block;
+  opacity: 0;
+}
+
+.overlay.animate-disappear {
+  animation: reveal 0.3s ease-in-out 1 reverse forwards;
+  display: block;
+  opacity: 1;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-nodelay {
+  animation-delay: 0s;
+}
+
+.align-self-flex-start {
+  align-self: flex-start;
+}
+
+.align-self-flex-end {
+  align-self: flex-end;
+}
+
+.align-self-flex-center {
+  align-self: flex-center;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.valign-text-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+input:focus {
+  outline: none;
+}
+
+.listeners-active,
+.listeners-active * {
+  pointer-events: auto;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.smart-layers-pointers,
+.smart-layers-pointers * {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.listeners-active-click,
+.listeners-active-click * {
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --onyx: #3a3a3a;
+  --white: #ffffff;
+  --font-size-l: 26px;
+  --font-size-m: 24px;
+  --font-size-xl: 36px;
+  --font-size-xxl: 48px;
+  --font-size-xxxl: 64px;
+  --font-family-ubuntu: "Ubuntu", Helvetica;
+}
+
+.ubuntu-medium-onyx-24px {
+  color: var(--onyx);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.ubuntu-normal-onyx-24px {
+  color: var(--onyx);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.ubuntu-bold-onyx-48px {
+  color: var(--onyx);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.ubuntu-bold-onyx-36px {
+  color: var(--onyx);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* screen - update */
+
+.update {
+  background-color: var(--white);
+  height: 5041px;
+  mix-blend-mode: normal;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  width: 1440px;
+}
+
+.update .cl-78-1-vlhUap {
+  background-color: transparent;
+  height: 1382px;
+  left: -560px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  width: 4000px;
+}
+
+.update .cl-78-2-vlhUap {
+  background-color: transparent;
+  height: 1954px;
+  left: -449px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 3087px;
+  width: 3778px;
+}
+
+.update .ellipse-5-vlhUap {
+  background-color: transparent;
+  height: 338px;
+  left: 67px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 2804px;
+  width: 368px;
+}
+
+.update .ellipse-6-vlhUap {
+  background-color: transparent;
+  height: 338px;
+  left: 67px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 3204px;
+  width: 368px;
+}
+
+.update .home-is-behind-the-vlhUap {
+  background-color: transparent;
+  height: auto;
+  left: 918px;
+  letter-spacing: 0px;
+  line-height: 36px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: right;
+  top: 4766px;
+  width: 402px;
+}
+
+.update .ellipse-7-vlhUap {
+  background-color: transparent;
+  height: 338px;
+  left: 67px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 3580px;
+  width: 368px;
+}
+
+.update .cover-7-vlhUap {
+  background-color: transparent;
+  height: 513px;
+  left: 120px;
+  position: absolute;
+  top: 61px;
+  width: 1200px;
+}
+
+.update .text-v2yp2E {
+  background-color: transparent;
+  height: 234px;
+  left: 0px;
+  position: absolute;
+  top: 279px;
+  width: 596px;
+}
+
+.update .stay-connected-with-d3RABP {
+  background-color: transparent;
+  color: var(--onyx);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 0px;
+  width: auto;
+}
+
+.update .home-is-behind-the-d3RABP {
+  background-color: transparent;
+  height: auto;
+  left: 2px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 178px;
+  width: 590px;
+}
+
+.update .navigation-4-v2yp2E {
+  background-color: transparent;
+  height: 80px;
+  left: 1059px;
+  position: absolute;
+  top: -10px;
+  width: 161px;
+}
+
+.update .group-1-vlhUap {
+  background-color: transparent;
+  height: 41px;
+  left: 120px;
+  position: absolute;
+  top: 70px;
+  width: 180px;
+}
+
+.update .group-175531-vlhUap {
+  background-color: transparent;
+  height: 993px;
+  left: 135px;
+  position: absolute;
+  top: 1452px;
+  width: 1189px;
+}
+
+.update .illustration-EiJVzK {
+  background-color: transparent;
+  height: 993px;
+  left: 167px;
+  position: absolute;
+  top: -0px;
+  width: 913px;
+}
+
+.update .home-is-behind-the-EiJVzK {
+  background-color: transparent;
+  height: auto;
+  left: 484px;
+  letter-spacing: 0px;
+  line-height: 35.1px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 122px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.update .home-is-behind-the-uorxBD {
+  background-color: transparent;
+  height: auto;
+  left: 95px;
+  letter-spacing: 0px;
+  line-height: 35.1px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 739px;
+  white-space: nowrap;
+  width: 173px;
+}
+
+.update .home-is-behind-the-RDgWtW {
+  background-color: transparent;
+  height: auto;
+  left: 931px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 547px;
+  width: 173px;
+}
+
+.update .home-is-behind-the-hutzlc {
+  background-color: transparent;
+  height: auto;
+  left: 1005px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 716px;
+  width: 170px;
+}
+
+.update .home-is-behind-the-5axTvv {
+  background-color: transparent;
+  height: auto;
+  left: 721px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 259px;
+  width: 173px;
+}
+
+.update .home-is-behind-the-ii3vYN {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0px;
+  line-height: 35.1px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 245px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.update .home-is-behind-the-I4tt3u {
+  background-color: transparent;
+  height: auto;
+  left: 50px;
+  letter-spacing: 0px;
+  line-height: 35.1px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: right;
+  top: 533px;
+  white-space: nowrap;
+  width: 200px;
+}
+
+.update .group-175532-vlhUap {
+  background-color: transparent;
+  height: 73px;
+  left: 120px;
+  position: absolute;
+  top: 638px;
+  width: 299px;
+}
+
+.update .button-small-blue-bg-round-4jooXm {
+  background-color: transparent;
+  height: 73px;
+  left: 0px;
+  mix-blend-mode: normal;
+  position: relative;
+  top: 0px;
+  width: 299px;
+}
+
+.update .bg-cGpe1C {
+  background-color: transparent;
+  height: 291px;
+  left: -109px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: -91px;
+  width: 517px;
+}
+
+.update .button-cGpe1C {
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 87px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: center;
+  top: 22px;
+  width: auto;
+}
+
+.update .stay-connected-with-vlhUap {
+  background-color: transparent;
+  height: auto;
+  left: 120px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: center;
+  top: 1221px;
+  width: 1200px;
+}
+
+.update .stay-connected-with-ZxWDSU {
+  background-color: transparent;
+  height: auto;
+  left: 120px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: center;
+  top: 4155px;
+  width: 1200px;
+}
+
+.update .stay-connected-with-2IchX8 {
+  background-color: transparent;
+  height: auto;
+  left: 120px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: center;
+  top: 2565px;
+  width: 1200px;
+}
+
+.update .stay-connected-with-hzvkxD {
+  background-color: transparent;
+  height: auto;
+  left: 476px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 2905px;
+  width: auto;
+}
+
+.update .stay-connected-with-LQ265X {
+  background-color: transparent;
+  height: auto;
+  left: 476px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 3239px;
+  width: 844px;
+}
+
+.update .stay-connected-with-QGckAh {
+  background-color: transparent;
+  height: auto;
+  left: 476px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 3566px;
+  width: auto;
+}
+
+.update .stay-connected-with-rjVtrw {
+  background-color: transparent;
+  height: auto;
+  left: 476px;
+  letter-spacing: 0px;
+  line-height: 48px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 2977px;
+  width: 844px;
+}
+
+.update .stay-connected-with-VExso3 {
+  background-color: transparent;
+  height: auto;
+  left: 476px;
+  letter-spacing: 0px;
+  line-height: 48px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 3352px;
+  width: 844px;
+}
+
+.update .stay-connected-with-jwzpmo {
+  background-color: transparent;
+  height: auto;
+  left: 476px;
+  letter-spacing: 0px;
+  line-height: 48px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 3638px;
+  width: 844px;
+}
+
+.update .stay-connected-with-ksUBZy {
+  background-color: transparent;
+  color: var(--onyx);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 300;
+  height: auto;
+  left: 395px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: center;
+  top: 2706px;
+  width: auto;
+}
+
+.update .home-is-behind-the-ZxWDSU {
+  background-color: transparent;
+  color: #28a5eb;
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  left: 597px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: center;
+  text-decoration: underline;
+  top: 4007px;
+  width: auto;
+}
+
+.update .group-vlhUap {
+  background-color: transparent;
+  height: 200px;
+  left: 118px;
+  position: absolute;
+  top: 2897px;
+  width: 255px;
+}
+
+.update .group-ZxWDSU {
+  background-color: transparent;
+  height: 240px;
+  left: 120px;
+  position: absolute;
+  top: 3211px;
+  width: 234px;
+}
+
+.update .group-2IchX8 {
+  background-color: transparent;
+  height: 250px;
+  left: 118px;
+  position: absolute;
+  top: 3595px;
+  width: 254px;
+}
+
+.update .i-phone-12-mockup-vlhUap {
+  background-color: transparent;
+  height: 799px;
+  left: 654px;
+  position: absolute;
+  top: 202px;
+  transform: rotate(180deg);
+  width: 786px;
+}
+
+.update .shadow-TKWh5Z {
+  background-color: transparent;
+  height: 799px;
+  left: -0px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  transform: rotate(-180deg);
+  width: 787px;
+}
+
+.update .main-TKWh5Z {
+  background-color: transparent;
+  height: 651px;
+  left: 142px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 1px;
+  transform: rotate(-180deg);
+  width: 469px;
+}
+
+.update .i-phone-12-mockup-label-TKWh5Z {
+  background-color: transparent;
+  height: 610px;
+  left: 168px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: absolute;
+  top: 11px;
+  transform: rotate(-180deg);
+  width: 431px;
+}
+
+.update .textlabel-vlhUap {
+  background-color: transparent;
+  color: var(--white);
+  font-family: var(--font-family-ubuntu);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+  height: auto;
+  left: 755px;
+  letter-spacing: 0px;
+  line-height: normal;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: center;
+  top: 1936px;
+  width: auto;
+}
+
+.update .ellipse-227-vlhUap {
+  background-color: transparent;
+  height: 312px;
+  left: 568px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 1801px;
+  width: 195px;
+}
+
+.update .vector-vlhUap {
+  background-color: transparent;
+  height: 107px;
+  left: 620px;
+  mix-blend-mode: normal;
+  position: absolute;
+  top: 1901px;
+  width: 77px;
+}
+
+.update .home-is-behind-the-2IchX8 {
+  background-color: transparent;
+  height: auto;
+  left: 1205px;
+  letter-spacing: 0px;
+  line-height: 31px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 1898px;
+  white-space: nowrap;
+  width: auto;
+}
+
+.update .group-175536-vlhUap {
+  background-color: transparent;
+  height: 420px;
+  left: 121px;
+  position: absolute;
+  top: 4326px;
+  width: 1201px;
+}
+
+.update .group-x5xRaQ {
+  background-color: transparent;
+  height: 42px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 42px;
+}
+
+.update .group-yWBzCX {
+  background-color: transparent;
+  height: 42px;
+  left: 1157px;
+  position: absolute;
+  top: 378px;
+  width: 42px;
+}
+
+.update .home-is-behind-the-x5xRaQ {
+  background-color: transparent;
+  height: auto;
+  left: 0px;
+  letter-spacing: 0px;
+  line-height: 36px;
+  mix-blend-mode: normal;
+  position: absolute;
+  text-align: left;
+  top: 62px;
+  width: 524px;
+}
