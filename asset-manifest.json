@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/liquid-landing-2/static/css/main.a617e044.chunk.css",
+    "main.js": "/liquid-landing-2/static/js/main.4c5c7f0f.chunk.js",
+    "main.js.map": "/liquid-landing-2/static/js/main.4c5c7f0f.chunk.js.map",
+    "runtime-main.js": "/liquid-landing-2/static/js/runtime-main.e82376cf.js",
+    "runtime-main.js.map": "/liquid-landing-2/static/js/runtime-main.e82376cf.js.map",
+    "static/js/2.510a502a.chunk.js": "/liquid-landing-2/static/js/2.510a502a.chunk.js",
+    "static/js/2.510a502a.chunk.js.map": "/liquid-landing-2/static/js/2.510a502a.chunk.js.map",
+    "static/js/3.73b32ac0.chunk.js": "/liquid-landing-2/static/js/3.73b32ac0.chunk.js",
+    "static/js/3.73b32ac0.chunk.js.map": "/liquid-landing-2/static/js/3.73b32ac0.chunk.js.map",
+    "index.html": "/liquid-landing-2/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/liquid-landing-2/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.510a502a.chunk.js.LICENSE.txt": "/liquid-landing-2/static/js/2.510a502a.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/liquid-landing-2/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e82376cf.js",
+    "static/js/2.510a502a.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.4c5c7f0f.chunk.js"
+  ]
+}
