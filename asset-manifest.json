@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/liquid-landing-2/static/css/main.51fc1d72.chunk.css",
-    "main.js": "/liquid-landing-2/static/js/main.6231283e.chunk.js",
-    "main.js.map": "/liquid-landing-2/static/js/main.6231283e.chunk.js.map",
+    "main.css": "/liquid-landing-2/static/css/main.0d3b7b17.chunk.css",
+    "main.js": "/liquid-landing-2/static/js/main.7a75549c.chunk.js",
+    "main.js.map": "/liquid-landing-2/static/js/main.7a75549c.chunk.js.map",
     "runtime-main.js": "/liquid-landing-2/static/js/runtime-main.e46d3457.js",
     "runtime-main.js.map": "/liquid-landing-2/static/js/runtime-main.e46d3457.js.map",
     "static/js/2.209e9c0a.chunk.js": "/liquid-landing-2/static/js/2.209e9c0a.chunk.js",
@@ -10,17 +10,18 @@
     "static/js/3.5a45d0dd.chunk.js": "/liquid-landing-2/static/js/3.5a45d0dd.chunk.js",
     "static/js/3.5a45d0dd.chunk.js.map": "/liquid-landing-2/static/js/3.5a45d0dd.chunk.js.map",
     "index.html": "/liquid-landing-2/index.html",
-    "static/css/main.51fc1d72.chunk.css.map": "/liquid-landing-2/static/css/main.51fc1d72.chunk.css.map",
+    "static/css/main.0d3b7b17.chunk.css.map": "/liquid-landing-2/static/css/main.0d3b7b17.chunk.css.map",
     "static/js/2.209e9c0a.chunk.js.LICENSE.txt": "/liquid-landing-2/static/js/2.209e9c0a.chunk.js.LICENSE.txt",
     "static/media/BackCL.bf19bdb1.png": "/liquid-landing-2/static/media/BackCL.bf19bdb1.png",
     "static/media/BackDrop.e95a05a2.svg": "/liquid-landing-2/static/media/BackDrop.e95a05a2.svg",
     "static/media/BarBlue.1e448de2.svg": "/liquid-landing-2/static/media/BarBlue.1e448de2.svg",
     "static/media/BarGreen.e5d61649.svg": "/liquid-landing-2/static/media/BarGreen.e5d61649.svg",
-    "static/media/BarRed.1c62ad3d.svg": "/liquid-landing-2/static/media/BarRed.1c62ad3d.svg",
+    "static/media/BarRed.0171febd.svg": "/liquid-landing-2/static/media/BarRed.0171febd.svg",
     "static/media/BenefitCard.33a7f078.svg": "/liquid-landing-2/static/media/BenefitCard.33a7f078.svg",
     "static/media/BenefitMoney.50bb94ca.svg": "/liquid-landing-2/static/media/BenefitMoney.50bb94ca.svg",
     "static/media/BenefitRating.417372d8.svg": "/liquid-landing-2/static/media/BenefitRating.417372d8.svg",
-    "static/media/BlockSign.7dbfd512.svg": "/liquid-landing-2/static/media/BlockSign.7dbfd512.svg",
+    "static/media/BlockSign.908a7beb.svg": "/liquid-landing-2/static/media/BlockSign.908a7beb.svg",
+    "static/media/BlockSign2.8a78fd4d.svg": "/liquid-landing-2/static/media/BlockSign2.8a78fd4d.svg",
     "static/media/Chat.b226e66d.svg": "/liquid-landing-2/static/media/Chat.b226e66d.svg",
     "static/media/CreditImp.3dad686b.svg": "/liquid-landing-2/static/media/CreditImp.3dad686b.svg",
     "static/media/Deadlines.56280e5f.svg": "/liquid-landing-2/static/media/Deadlines.56280e5f.svg",
@@ -31,10 +32,12 @@
     "static/media/Group.0ad1c824.svg": "/liquid-landing-2/static/media/Group.0ad1c824.svg",
     "static/media/Issue.0ffb2856.svg": "/liquid-landing-2/static/media/Issue.0ffb2856.svg",
     "static/media/MFO.1177ad7d.svg": "/liquid-landing-2/static/media/MFO.1177ad7d.svg",
+    "static/media/MFO_m.79e38249.svg": "/liquid-landing-2/static/media/MFO_m.79e38249.svg",
     "static/media/Month.0089bf4f.svg": "/liquid-landing-2/static/media/Month.0089bf4f.svg",
     "static/media/Notification.4f93d8fb.svg": "/liquid-landing-2/static/media/Notification.4f93d8fb.svg",
     "static/media/PerAnnum.15572ea9.svg": "/liquid-landing-2/static/media/PerAnnum.15572ea9.svg",
     "static/media/Phone.fa48b2c0.svg": "/liquid-landing-2/static/media/Phone.fa48b2c0.svg",
+    "static/media/Phone2.0d3af4d3.svg": "/liquid-landing-2/static/media/Phone2.0d3af4d3.svg",
     "static/media/PhoneBack.ed4795dd.svg": "/liquid-landing-2/static/media/PhoneBack.ed4795dd.svg",
     "static/media/Pixel5.9abc1194.png": "/liquid-landing-2/static/media/Pixel5.9abc1194.png",
     "static/media/ReasonDKH.a673c76c.svg": "/liquid-landing-2/static/media/ReasonDKH.a673c76c.svg",
@@ -45,7 +48,7 @@
   "entrypoints": [
     "static/js/runtime-main.e46d3457.js",
     "static/js/2.209e9c0a.chunk.js",
-    "static/css/main.51fc1d72.chunk.css",
-    "static/js/main.6231283e.chunk.js"
+    "static/css/main.0d3b7b17.chunk.css",
+    "static/js/main.7a75549c.chunk.js"
   ]
 }
