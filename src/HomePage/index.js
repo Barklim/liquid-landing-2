@@ -8,6 +8,8 @@ import { ReactComponent as BackDrop } from "../assets/BackDrop.svg";
 import backCL from "../assets/BackCL.png";
 import iPhone from "../assets/iPhone12Pro.png";
 import pixel from "../assets/Pixel5.png";
+import phoneImg from "../assets/Phone.png";
+import phoneImg2 from "../assets/Phone.png";
 import { ReactComponent as MFO } from "../assets/MFO.svg";
 import { ReactComponent as MFO_M } from "../assets/MFO_m.svg";
 import { ReactComponent as DKH } from "../assets/ReasonDKH.svg";
@@ -27,11 +29,12 @@ import { ReactComponent as Card } from "../assets/BenefitCard.svg";
 import { ReactComponent as Rating } from "../assets/BenefitRating.svg";
 import { ReactComponent as Money } from "../assets/BenefitMoney.svg";
 import { ReactComponent as PhoneBack } from "../assets/PhoneBack.svg";
-import { ReactComponent as Phone } from "../assets/Phone.svg";
-import { ReactComponent as Phone2 } from "../assets/Phone2.svg";
+// import { ReactComponent as Phone } from "../assets/Phone.svg";
+// import { ReactComponent as Phone2 } from "../assets/Phone2.svg";
 import { ReactComponent as BSign } from "../assets/BlockSign.svg";
 import { ReactComponent as BSign2 } from "../assets/BlockSign2.svg";
 import { ReactComponent as Issue } from "../assets/Issue.svg";
+import ModalHomePage from "../components/Modal";
 
 function HomePage() {
   return (
@@ -71,7 +74,10 @@ function HomePage() {
               Возьми&nbsp;до&nbsp;40&nbsp;000&nbsp;рублей&nbsp;за&nbsp;несколько
               минут&nbsp;даже&nbsp;с&nbsp;плохой&nbsp;кредитной&nbsp;историей
             </div>
-            <div className="button_primary">Получить</div>
+            {/* <div className="button_primary">Получить</div> */}
+            <div className="modalHomePage">
+              <ModalHomePage />
+            </div>
           </div>
           <div className="mainView__right">
             <BackDrop className="backDrop" />
@@ -89,7 +95,10 @@ function HomePage() {
           <br />
           минут&nbsp;даже&nbsp;с&nbsp;плохой&nbsp;кредитной&nbsp;историей
         </div>
-        <div className="button_primary_Mobile">Получить</div>
+        <div className="modalHomePage_Mobile">
+          <ModalHomePage />
+        </div>
+        {/* <div className="button_primary_Mobile">Получить</div> */}
         <div className="reason">
           <div className="reason__header">
             Почему&nbsp;Ликвид,&nbsp;лучше&nbsp;чем
@@ -453,7 +462,8 @@ function HomePage() {
           <div className="button_phone">
             <div className="button_primary button_white">Получить</div>
           </div>
-          <Phone className="phone__img" />
+          {/* <Phone className="phone__img" /> */}
+          <img alt="Phone" className="phone__img" src={phoneImg} />
         </div>
         <div className="phone_Mobile">
           <PhoneBack className="phone__imgBack_Mobile" />
@@ -467,7 +477,8 @@ function HomePage() {
           <div className="button_phone">
             <div className="button_primary_Moblie button_white">Получить</div>
           </div>
-          <Phone2 className="phone__img_Mobile" />
+          {/* <Phone2 className="phone__img_Mobile" /> */}
+          <img alt="Phone" className="phone__img_Mobile" src={phoneImg2} />
         </div>
         <div className="postInfo">
           <div className="postInfo__header">
@@ -535,8 +546,14 @@ function HomePage() {
             <Drop />
             <div className="postInfo__h1 postInfo__h1_Mobile">Решение</div>
             <div className="postInfo__content postInfo__content_Mobile">
-              Мы появились, чтобы это исправить и дать нуждающимся людям
-              качественный кредит. Мы хотим помочь вам, а не обмануть.
+              Мы появились, чтобы это
+              <br />
+              исправить и дать нуждающимся
+              <br />
+              людям качественный кредит.
+              <br />
+              Мы хотим помочь вам,
+              <br />а не обмануть.
             </div>
           </div>
         </div>
@@ -592,6 +609,40 @@ function HomePage() {
                 </span>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="footer_Mobile">
+        <div className="footer__upper_Mobile">
+          <a href="#">
+            <img alt="liquid logo" className="footer__logo_Mobile" src={logo} />
+          </a>
+          <div className="footer__innOgrn_Mobile">
+            <div className="footer__inn_Mobile">ИНН: 7736332618</div>
+            <div className="footer__ogrn_Mobile">ОГРН: 1217700023793</div>
+          </div>
+          <div className="footer__mail_Mobile">Email: info@liquidwage.com</div>
+          <div className="footer__adress_Mobile">
+            Адрес: г. Москва, вн.тер.г. муниципальный округ Ломоносовский, пр-кт
+            Вернадского, д. 29, э/ком 5/20, офис A7Ю
+          </div>
+          <div className="footer__agreement_Mobile">
+            Соглашение об обработке персональных данных
+          </div>
+        </div>
+
+        <div className="footerBottom_Mobile">
+          <div className="footerBottom__copyright_Mobile">
+            © 2021 Сайт принадлежит ООО “ЛИКВИДЭЙДЖ”
+          </div>
+          <div className="footerBottom__about_Mobile">
+            Сайт не является представительством МФО или банком, не осуществляет
+            выдачу займов и кредитов. Все материалы, размещенные на сайте имеют
+            информационный характер. Оставляя контактные данные, вы соглашаетесь
+            с{" "}
+            <span className="footer_politic_Mobile">
+              политикой об обработке персональных данных
+            </span>
           </div>
         </div>
       </div>
