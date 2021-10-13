@@ -1,3 +1,4 @@
+import React from "react";
 import "./HomePage.css";
 
 import logo from "../assets/logo.svg";
@@ -35,10 +36,23 @@ import { ReactComponent as BSign } from "../assets/BlockSign.svg";
 import { ReactComponent as BSign2 } from "../assets/BlockSign2.svg";
 import { ReactComponent as Issue } from "../assets/Issue.svg";
 import ModalHomePage from "../components/Modal";
+import PdfModal from "../components/Pdf";
 
 function HomePage() {
   return (
     <div className="liquidLanding">
+      <div>
+        {/* <Document
+          file={pdfFile}
+          // onLoadSuccess={onDocumentLoadSuccess}
+          // options={options}
+        >
+          <Page pageNumber={1} />
+          <Page pageNumber={2} />
+          <Page pageNumber={3} />
+        </Document> */}
+      </div>
+
       <div className="backCL">
         <img alt="BackCL" className="backCL__img" src={backCL} />
       </div>
@@ -71,7 +85,7 @@ function HomePage() {
               в&nbsp;России
             </div>
             <div className="mainView__bottomText">
-              Возьми&nbsp;до&nbsp;40&nbsp;000&nbsp;рублей&nbsp;за&nbsp;несколько
+              Возьми&nbsp;до&nbsp;30&nbsp;000&nbsp;рублей&nbsp;за&nbsp;несколько
               минут&nbsp;даже&nbsp;с&nbsp;плохой&nbsp;кредитной&nbsp;историей
             </div>
             {/* <div className="button_primary">Получить</div> */}
@@ -91,14 +105,14 @@ function HomePage() {
           <Group className="group__img" />
         </div>
         <div className="mainView__subText_Mobile">
-          Возьми&nbsp;до&nbsp;40&nbsp;000&nbsp;рублей&nbsp;за&nbsp;несколько
+          Возьми&nbsp;до&nbsp;30&nbsp;000&nbsp;рублей&nbsp;за&nbsp;несколько
           <br />
           минут&nbsp;даже&nbsp;с&nbsp;плохой&nbsp;кредитной&nbsp;историей
         </div>
+        {/* <div className="button_primary_Mobile">Получить</div> */}
         <div className="modalHomePage_Mobile">
           <ModalHomePage />
         </div>
-        {/* <div className="button_primary_Mobile">Получить</div> */}
         <div className="reason">
           <div className="reason__header">
             Почему&nbsp;Ликвид,&nbsp;лучше&nbsp;чем
@@ -360,18 +374,27 @@ function HomePage() {
               <div className="bs1__sub">
                 <Drop className="bs1__drop" />
                 <div className="bs1__subText">
-                  Занимайте&nbsp;до&nbsp;40&nbsp;000&nbsp;рублей&nbsp;даже
+                  Занимайте&nbsp;до&nbsp;30&nbsp;000&nbsp;рублей&nbsp;даже
                   <br />
                   с&nbsp;плохим&nbsp;кредитным&nbsp;рейтингом
                 </div>
               </div>
-              <br />
+
               <div className="bs1__sub">
                 <Drop className="bs1__drop" />
                 <div className="bs1__subText">
                   Подавайте&nbsp;заявку&nbsp;и&nbsp;получайте
                   <br />
                   деньги&nbsp;за&nbsp;3&nbsp;минуты.
+                </div>
+              </div>
+
+              <div className="bs1__sub">
+                <Drop className="bs1__drop" />
+                <div className="bs1__subText">
+                  Кредитная&nbsp;история&nbsp;не&nbsp;важна&nbsp;-&nbsp;мы
+                  <br />
+                  используем&nbsp;искусственный&nbsp;интеллект
                 </div>
               </div>
             </div>
@@ -398,7 +421,7 @@ function HomePage() {
                   и&nbsp;скрытых&nbsp;платежей
                 </div>
               </div>
-              <br />
+
               <div className="bs1__sub">
                 <Drop className="bs1__drop" />
                 <div className="bs1__subText">
@@ -432,7 +455,7 @@ function HomePage() {
                   2&nbsp;месяцев
                 </div>
               </div>
-              <br />
+
               <div className="bs1__sub">
                 <Drop className="bs1__drop" />
                 <div className="bs1__subText">
@@ -455,12 +478,15 @@ function HomePage() {
         <div className="phone">
           <PhoneBack className="phone__imgBack" />
           <div className="phone__header">
-            Получите&nbsp;до&nbsp;40&nbsp;000&nbsp;рублей
+            Получите&nbsp;до&nbsp;30&nbsp;000&nbsp;рублей
             <br />
             в&nbsp;Ликвид&nbsp;кредит
           </div>
           <div className="button_phone">
-            <div className="button_primary button_white">Получить</div>
+            {/* <div className="button_primary button_white">Получить</div> */}
+            <div className="modalHomePage modalHomePage_white">
+              <ModalHomePage />
+            </div>
           </div>
           {/* <Phone className="phone__img" /> */}
           <img alt="Phone" className="phone__img" src={phoneImg} />
@@ -470,12 +496,15 @@ function HomePage() {
           <div className="phone__header_Mobile">
             Получите&nbsp;до
             <br />
-            40&nbsp;000&nbsp;рублей
+            30&nbsp;000&nbsp;рублей
             <br />
             в&nbsp;Ликвид&nbsp;кредит
           </div>
           <div className="button_phone">
-            <div className="button_primary_Moblie button_white">Получить</div>
+            {/* <div className="button_primary_Moblie button_white">Получить</div> */}
+            <div className="modalHomePage_Mobile modalHomePage2_Mobile modalHomePage_white">
+              <ModalHomePage />
+            </div>
           </div>
           {/* <Phone2 className="phone__img_Mobile" /> */}
           <img alt="Phone" className="phone__img_Mobile" src={phoneImg2} />
@@ -583,9 +612,13 @@ function HomePage() {
             </div>
             <div className="footer__right">
               <div className="footer__license">
-                Соглашение&nbsp;об&nbsp;обработке
-                <br />
-                персональных&nbsp;данных
+                <PdfModal>
+                  <span>
+                    Соглашение&nbsp;об&nbsp;обработке&nbsp;
+                    <br />
+                    персональных&nbsp;данных
+                  </span>
+                </PdfModal>
               </div>
             </div>
           </div>
@@ -603,10 +636,12 @@ function HomePage() {
                 осуществляет выдачу займов и кредитов. Все материалы,
                 размещенные на сайте имеют информационный характер. Оставляя
                 контактные данные, вы соглашаетесь с{" "}
-                <span className="footer_politic">
-                  {" "}
-                  политикой об обработке персональных данных
-                </span>
+                <PdfModal>
+                  <span className="footer_politic">
+                    {" "}
+                    политикой об обработке персональных данных
+                  </span>
+                </PdfModal>
               </div>
             </div>
           </div>
@@ -627,7 +662,12 @@ function HomePage() {
             Вернадского, д. 29, э/ком 5/20, офис A7Ю
           </div>
           <div className="footer__agreement_Mobile">
-            Соглашение об обработке персональных данных
+            <PdfModal>
+              <div>
+                Соглашение&nbsp;об&nbsp;обработке&nbsp;персональных&nbsp;данных
+                <br />
+              </div>
+            </PdfModal>
           </div>
         </div>
 
@@ -640,12 +680,17 @@ function HomePage() {
             выдачу займов и кредитов. Все материалы, размещенные на сайте имеют
             информационный характер. Оставляя контактные данные, вы соглашаетесь
             с{" "}
-            <span className="footer_politic_Mobile">
-              политикой об обработке персональных данных
-            </span>
+            <PdfModal>
+              <span className="footer_politic_Mobile">
+                политикой об обработке персональных данных
+                <div></div>
+              </span>
+            </PdfModal>
           </div>
         </div>
       </div>
+      {/* <div className="preFooter1"></div>
+      <div className="preFooter2"></div> */}
     </div>
   );
 }

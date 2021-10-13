@@ -672,6 +672,13 @@ svg {
   .reason__sub {
     display: none;
   }
+  .urHeader__sub {
+    font-size: 16px;
+  }
+  .barRed,
+  .barBlueContainer {
+    left: 25vw;
+  }
   .reason {
     margin-bottom: 0;
   }
@@ -696,13 +703,24 @@ svg {
     width: 46px;
   }
   .barGreen {
-    top: 68px;
+    /* top: 68px; */
+    /* top: 62px; */
+    top: 66px;
   }
   .barRed {
     bottom: 36px;
   }
   .barBlueContainer {
     bottom: 21px;
+  }
+  .barGreenText,
+  .barRedText,
+  .barBlueBottom {
+    font-size: 16px;
+    font-size: 5vw;
+  }
+  .barRedText {
+    left: 25vw;
   }
 }
 
@@ -881,7 +899,7 @@ svg {
 .button_phone {
   position: relative;
   width: 130px;
-  z-index: 20;
+  /* z-index: 20; */
   border-radius: 12px;
   bottom: 130px;
   left: 160px;
@@ -944,7 +962,8 @@ svg {
 .phone__img_Mobile {
   position: relative;
   bottom: 287px;
-  bottom: 74vw;
+  /* bottom: 74vw; */
+  bottom: 63vw;
   /* right: 14vw; */
   /* right: calc(4vw + 2.4em); */
   left: calc(9vw + 3.4em);
@@ -1112,32 +1131,26 @@ svg {
 
 /* ---------- Footer ---------- */
 .preFooter1 {
-  position: absolute;
-  width: 100%;
-  height: 160px;
   left: 0px;
-  top: 4235px;
   z-index: -1;
   background: #fbfbfb;
   background: #fff;
   border-radius: 0px 0px 80.2642px 80.2642px;
 }
 .preFooter2 {
-  position: absolute;
-  width: 100%;
-  height: 160px;
   left: 0px;
-  top: 4235px;
   z-index: -3;
   background-color: #f2f5f6;
 }
-@media (max-width: 576px) {
-  .preFooter1,
-  .preFooter2 {
-    /* top: 5638px; */
-    top: 5790px;
-  }
+.preFooter1,
+.preFooter2 {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  bottom: 160px;
+  margin-bottom: -160px;
 }
+
 .footer {
   width: 100wv;
   background-color: #f2f5f6;
@@ -1192,13 +1205,14 @@ svg {
   align-items: center;
   justify-content: center;
   color: #28a5eb;
+  cursor: pointer;
 }
 .footerBottom {
   height: 100px;
   background-color: #f2f5f6;
 }
 .footerBottom__right {
-  width: 51%;
+  width: 52%;
   display: flex;
   text-align: right;
   font-size: 16px;
@@ -1228,6 +1242,7 @@ svg {
 }
 .footer_politic {
   color: #28a5eb;
+  cursor: pointer;
 }
 
 /* --- Mobile --- */
@@ -1265,6 +1280,7 @@ svg {
   color: #28a5eb;
   width: 100%;
   margin-bottom: 21px;
+  /* margin-bottom: 10px; */
 }
 .footerBottom_Mobile {
   color: #858ba0;
@@ -1320,6 +1336,19 @@ svg {
   line-height: 120%;
   cursor: pointer;
 }
+.modalHomePage2_Mobile > button {
+  top: auto;
+  top: 10px;
+}
+.modalHomePage_white > button {
+  background: #fff !important;
+  color: #28a5eb;
+
+  width: 130px !important;
+  height: 41px !important;
+  margin-left: auto;
+}
+
 @media (min-width: 576px) {
   .modalHomePage_Mobile {
     display: none !important;

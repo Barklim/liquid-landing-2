@@ -16,6 +16,7 @@ import {
 import { useDisclosure } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
 import PhoneInput from "react-phone-number-input";
+import PdfModal from "../../components/Pdf";
 
 function ModalHomePage() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -34,8 +35,8 @@ function ModalHomePage() {
   });
 
   const onSubmit = (data) => {
-    const sendData = { name: data.name, tel: data.tel, email: data.email };
-    alert(JSON.stringify(sendData));
+    // const sendData = { name: data.name, tel: data.tel, email: data.email };
+    // alert(JSON.stringify(sendData));
   };
 
   return (
@@ -48,8 +49,6 @@ function ModalHomePage() {
         initialFocusRef={initialRef}
         isOpen={isOpen}
         onClose={onClose}
-        // size={"xl"}
-        // size={{ base: "624px", md: "756px", full: "956px" }}
         size={window.innerWidth > 567 ? "xl" : "full"}
         isCentered={true}
       >
@@ -57,14 +56,14 @@ function ModalHomePage() {
         <ModalContent onSubmit={handleSubmit(onSubmit)}>
           <form>
             <ModalHeader className="label">Получить кредит</ModalHeader>
-            <div className="label__sub">
+            {/* <div className="label__sub">
               Укажите свои контактные данные и мы свяжемся <br />с вами в
               ближайшее время
             </div>
             <div className="label__sub_Mobile">
               Укажите свои контактные данные
               <br /> и мы свяжемся с вами в ближайшее <br /> время
-            </div>
+            </div> */}
             <ModalCloseButton />
             <ModalBody pb={6} className="modal__body">
               <FormControl className="modal__formControl">
@@ -135,18 +134,24 @@ function ModalHomePage() {
                   ></input>
                   <span></span>
                 </label>
-                <div className="modal__agreementTextWrap">
-                  Соглашаюсь{" "}
-                  <span className="modal__agreementText">
-                    с правилами обработки
-                    {/* <br /> */}
-                    персональных данных
-                  </span>
-                </div>
+                <PdfModal>
+                  <div className="modal__agreementTextWrap">
+                    Соглашаюсь{" "}
+                    <span className="modal__agreementText">
+                      с правилами обработки&nbsp;
+                      {/* <br /> */}
+                      персональных данных
+                    </span>
+                  </div>
+                </PdfModal>
               </div>
               {errors.agreement?.type === "required" && (
                 <div className="error">Примите соглашение</div>
               )}
+              {/* <div className="modal__subText">
+                На email вы получите информацию о дате запуска сервиса
+                ЛиквидКредит
+              </div> */}
             </ModalBody>
 
             <ModalFooter className="modal__footer">
