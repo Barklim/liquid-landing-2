@@ -1,6 +1,8 @@
 import React from "react";
 import "./HomePage.css";
 
+import { Helmet } from "react-helmet";
+
 import logo from "../assets/logo.svg";
 import { ReactComponent as Chat } from "../assets/Chat.svg";
 import { ReactComponent as Notification } from "../assets/Notification.svg";
@@ -41,6 +43,17 @@ import PdfModal from "../components/Pdf";
 function HomePage() {
   return (
     <div className="liquidLanding">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>ЛиквидКредит - первый честный микрозайм.</title>
+        <meta
+          name="description"
+          content="Возьми до 30 000 рублей за несколько минут даже с плохой кредитной историей"
+        />
+        <link rel="alternate" hrefLang="ru" href="http://liquidwage.com/ru" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+      </Helmet>
       <div>
         {/* <Document
           file={pdfFile}
