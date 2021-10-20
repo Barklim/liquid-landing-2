@@ -2,7 +2,7 @@ import React from "react";
 import "./HomePage.css";
 
 import { Helmet } from "react-helmet";
-import ym from "react-yandex-metrika";
+// import ym from "react-yandex-metrika";
 
 import logo from "../assets/logo.svg";
 import { ReactComponent as Chat } from "../assets/Chat.svg";
@@ -47,33 +47,29 @@ console.log("v.0.0.2");
 
 function HomePage() {
   const getClick = () => {
-    ym("getClick", "/cart");
-    ym("getClick", "whateverGoal", { awesomeParameter: 41 });
-
-    ym(88005553535, "reachGoal", "TARGET_NAME");
-
-    ym(85977485, "reachGoal", "88005553535");
-
+    // ym("getClick", "/cart");
+    // ym("getClick", "whateverGoal", { awesomeParameter: 41 });
+    // ym(88005553535, "reachGoal", "TARGET_NAME");
+    // ym(85977485, "reachGoal", "88005553535");
     // ym(XXXXXX, 'reachGoal', 'goal')
     // ym(85977485,'reachGoal','88005553535')
   };
   const getClickPhone = () => {
-    ym("getClickPhone", "/cart");
-    ym("getClickPhone", "whateverGoal", { awesomeParameter: 42 });
+    // ym("getClickPhone", "/cart");
+    // ym("getClickPhone", "whateverGoal", { awesomeParameter: 42 });
+    window.ym(85977485, "reachGoal", "clickTopPhone");
   };
 
   const getClick2 = () => {
-    ym("getClick2", "/cart");
-    ym("getClick2", "whateverGoal", { awesomeParameter: 43 });
-
-    ym(85977485, "reachGoal2", "88005553536");
-
-    ym("88005553536", "88005553536", { awesomeParameter: 444 });
+    // ym("getClick2", "/cart");
+    // ym("getClick2", "whateverGoal", { awesomeParameter: 43 });
+    // ym(85977485, "reachGoal2", "88005553536");
+    // ym("88005553536", "88005553536", { awesomeParameter: 444 });
   };
   const getClickPhone2 = () => {
     // ym("getClickPhone2", "/cart");
     // ym("getClickPhone2", "whateverGoalhitPhone", { awesomeParameter: 44 });
-    ym(85977485, "reachGoal", "test");
+    // ym(85977485, "reachGoal", "test");
   };
 
   return (
@@ -137,7 +133,13 @@ function HomePage() {
               минут&nbsp;даже&nbsp;с&nbsp;плохой&nbsp;кредитной&nbsp;историей
             </div>
             {/* <div className="button_primary">Получить</div> */}
-            <div className="modalHomePage" onClick={() => getClick()}>
+            {/* <div className="modalHomePage" onClick={() => getClick()}> */}
+            <div
+              className="modalHomePage"
+              onClick={() => {
+                window.ym(85977485, "reachGoal", "clickTop");
+              }}
+            >
               <ModalHomePage />
             </div>
           </div>

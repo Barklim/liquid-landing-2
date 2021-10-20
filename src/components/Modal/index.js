@@ -27,7 +27,7 @@ import {
   CloseButton,
 } from "@chakra-ui/react";
 
-import ym from "react-yandex-metrika";
+// import ym from "react-yandex-metrika";
 
 function ModalHomePage() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -66,8 +66,10 @@ function ModalHomePage() {
 
     setAlert("lq__alert displayVisisble");
 
-    ym("modalSend", "/cart");
-    ym("modalSend", "whateverGoal", { awesomeParameter: 40 });
+    // ym("modalSend", "/cart");
+    // ym("modalSend", "whateverGoal", { awesomeParameter: 40 });
+    // onClick={() => {}}
+    window.ym(85977485, "reachGoal", "modalClick");
   };
   // console.log("errors");
   // console.log(errors);
