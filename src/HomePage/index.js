@@ -41,12 +41,16 @@ import { ReactComponent as Issue } from "../assets/Issue.svg";
 import ModalHomePage from "../components/Modal";
 import PdfModal from "../components/Pdf";
 
-console.log("v.0.0.1");
+console.log("v.0.0.2");
 
 function HomePage() {
   const getClick = () => {
     ym("getClick", "/cart");
     ym("getClick", "whateverGoal", { awesomeParameter: 41 });
+
+    ym(88005553535, "reachGoal", "TARGET_NAME");
+
+    ym(85977485, "reachGoal", "88005553535");
   };
   const getClickPhone = () => {
     ym("getClickPhone", "/cart");
@@ -56,6 +60,8 @@ function HomePage() {
   const getClick2 = () => {
     ym("getClick2", "/cart");
     ym("getClick2", "whateverGoal", { awesomeParameter: 43 });
+
+    ym(85977485, "reachGoal2", "88005553536");
   };
   const getClickPhone2 = () => {
     ym("getClickPhone2", "/cart");

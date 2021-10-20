@@ -57,9 +57,9 @@ function ModalHomePage() {
     };
 
     // alert(JSON.stringify(sendData));
-    console.log("!!!");
-    console.log(sendData);
-    console.log("!!!");
+    // console.log("!!!");
+    // console.log(sendData);
+    // console.log("!!!");
     // setTimeout(function () {
     //   onClose();
     // }, 2000);
