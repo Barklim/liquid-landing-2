@@ -53,6 +53,9 @@ function HomePage() {
     ym(88005553535, "reachGoal", "TARGET_NAME");
 
     ym(85977485, "reachGoal", "88005553535");
+
+    // ym(XXXXXX, 'reachGoal', 'goal')
+    // ym(85977485,'reachGoal','88005553535')
   };
   const getClickPhone = () => {
     ym("getClickPhone", "/cart");
@@ -68,8 +71,9 @@ function HomePage() {
     ym("88005553536", "88005553536", { awesomeParameter: 444 });
   };
   const getClickPhone2 = () => {
-    ym("getClickPhone2", "/cart");
-    ym("getClickPhone2", "whateverGoalhitPhone", { awesomeParameter: 44 });
+    // ym("getClickPhone2", "/cart");
+    // ym("getClickPhone2", "whateverGoalhitPhone", { awesomeParameter: 44 });
+    ym(85977485, "reachGoal", "test");
   };
 
   return (
