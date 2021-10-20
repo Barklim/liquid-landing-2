@@ -19,8 +19,6 @@ function PdfModal(props) {
   // const tagNaME = props.children?.type;
   const propChildren = props.children?.props?.children;
   const propClName = props.children?.props?.className;
-  console.log(props);
-  console.log(propChildren);
 
   return (
     <>

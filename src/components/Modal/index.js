@@ -18,16 +18,31 @@ import { useForm } from "react-hook-form";
 import PhoneInput from "react-phone-number-input";
 import PdfModal from "../../components/Pdf";
 
+import {
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
+  Box,
+  CloseButton,
+} from "@chakra-ui/react";
+
+import ym from "react-yandex-metrika";
+
 function ModalHomePage() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const initialRef = React.useRef();
 
-  const [value, setValue] = useState("+7");
+  // const [value, setValue] = useState("+7");
+  const [value, setValue] = useState("");
+
+  const [alertProp, setAlert] = useState("lq__alert");
 
   const {
     register,
     handleSubmit,
+    control,
     formState: { errors },
   } = useForm({
     // defaultValues: { name: data.name, email: data.email,  tel: data.tel, },
@@ -35,9 +50,29 @@ function ModalHomePage() {
   });
 
   const onSubmit = (data) => {
-    // const sendData = { name: data.name, tel: data.tel, email: data.email };
+    const sendData = {
+      name: data.name,
+      phoneNumber: data.tel,
+      email: data.email,
+    };
+
     // alert(JSON.stringify(sendData));
+    console.log("!!!");
+    console.log(sendData);
+    console.log("!!!");
+    // setTimeout(function () {
+    //   onClose();
+    // }, 2000);
+
+    setAlert("lq__alert displayVisisble");
+
+    ym("modalSend", "/cart");
+    ym("modalSend", "whateverGoal", { awesomeParameter: 40 });
   };
+  // console.log("errors");
+  // console.log(errors);
+  // console.log(isValidPhoneNumber("+7 982 828 33"));
+  // console.log(isValidPhoneNumber("+7 982 828 33") === true);
 
   return (
     <>
@@ -66,6 +101,19 @@ function ModalHomePage() {
             </div> */}
             <ModalCloseButton />
             <ModalBody pb={6} className="modal__body">
+              <div className={alertProp}>
+                <Alert status="success">
+                  <AlertIcon />
+                  <Box flex="1">
+                    <AlertTitle>Успешно отправлено!</AlertTitle>
+                    <AlertDescription display="block">
+                      Мы рассмотрим вашу заявку и ответим в течение следующих 48
+                      часов.
+                    </AlertDescription>
+                  </Box>
+                  {/* <CloseButton position="absolute" right="8px" top="8px" /> */}
+                </Alert>
+              </div>
               <FormControl className="modal__formControl">
                 <FormLabel>
                   Имя <span className="label__star">*</span>
@@ -98,10 +146,25 @@ function ModalHomePage() {
                   onChange={setValue}
                   className="PhoneInputInput"
                   name="tel"
+                  control={control}
                   ref={register({
                     required: true,
+                    minLength: {
+                      value: 1,
+                      message: "Введите номер",
+                    },
                   })}
                 />
+                {value?.length > 12 && value?.length !== 0 && (
+                  <div className="error">Вы ввели слишком много цифр</div>
+                )}
+                {value?.length < 12 &&
+                  value?.length !== 0 &&
+                  value?.length !== 2 && (
+                    <div className="error">
+                      Введите корректный номер телефона
+                    </div>
+                  )}
                 {errors.tel?.type === "required" && (
                   <div className="error">Введите номер телефона</div>
                 )}

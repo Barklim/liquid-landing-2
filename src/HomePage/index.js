@@ -2,6 +2,7 @@ import React from "react";
 import "./HomePage.css";
 
 import { Helmet } from "react-helmet";
+import ym from "react-yandex-metrika";
 
 import logo from "../assets/logo.svg";
 import { ReactComponent as Chat } from "../assets/Chat.svg";
@@ -40,7 +41,27 @@ import { ReactComponent as Issue } from "../assets/Issue.svg";
 import ModalHomePage from "../components/Modal";
 import PdfModal from "../components/Pdf";
 
+console.log("v.0.0.1");
+
 function HomePage() {
+  const getClick = () => {
+    ym("getClick", "/cart");
+    ym("getClick", "whateverGoal", { awesomeParameter: 41 });
+  };
+  const getClickPhone = () => {
+    ym("getClickPhone", "/cart");
+    ym("getClickPhone", "whateverGoal", { awesomeParameter: 42 });
+  };
+
+  const getClick2 = () => {
+    ym("getClick2", "/cart");
+    ym("getClick2", "whateverGoal", { awesomeParameter: 43 });
+  };
+  const getClickPhone2 = () => {
+    ym("getClickPhone2", "/cart");
+    ym("getClickPhone2", "whateverGoalhitPhone", { awesomeParameter: 44 });
+  };
+
   return (
     <div className="liquidLanding">
       <Helmet>
@@ -102,7 +123,7 @@ function HomePage() {
               минут&nbsp;даже&nbsp;с&nbsp;плохой&nbsp;кредитной&nbsp;историей
             </div>
             {/* <div className="button_primary">Получить</div> */}
-            <div className="modalHomePage">
+            <div className="modalHomePage" onClick={() => getClick()}>
               <ModalHomePage />
             </div>
           </div>
@@ -123,7 +144,7 @@ function HomePage() {
           минут&nbsp;даже&nbsp;с&nbsp;плохой&nbsp;кредитной&nbsp;историей
         </div>
         {/* <div className="button_primary_Mobile">Получить</div> */}
-        <div className="modalHomePage_Mobile">
+        <div className="modalHomePage_Mobile" onClick={() => getClickPhone()}>
           <ModalHomePage />
         </div>
         <div className="reason">
@@ -497,7 +518,10 @@ function HomePage() {
           </div>
           <div className="button_phone">
             {/* <div className="button_primary button_white">Получить</div> */}
-            <div className="modalHomePage modalHomePage_white">
+            <div
+              className="modalHomePage modalHomePage_white"
+              onClick={() => getClick2()}
+            >
               <ModalHomePage />
             </div>
           </div>
@@ -515,7 +539,10 @@ function HomePage() {
           </div>
           <div className="button_phone">
             {/* <div className="button_primary_Moblie button_white">Получить</div> */}
-            <div className="modalHomePage_Mobile modalHomePage2_Mobile modalHomePage_white">
+            <div
+              className="modalHomePage_Mobile modalHomePage2_Mobile modalHomePage_white"
+              onClick={() => getClickPhone2()}
+            >
               <ModalHomePage />
             </div>
           </div>
