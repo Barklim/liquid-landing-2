@@ -41,6 +41,8 @@ import { ReactComponent as Issue } from "../assets/Issue.svg";
 import ModalHomePage from "../components/Modal";
 import PdfModal from "../components/Pdf";
 
+// import { YMInitializer } from "react-yandex-metrika";
+
 console.log("v.0.0.2");
 
 function HomePage() {
@@ -62,6 +64,8 @@ function HomePage() {
     ym("getClick2", "whateverGoal", { awesomeParameter: 43 });
 
     ym(85977485, "reachGoal2", "88005553536");
+
+    ym("88005553536", "88005553536", { awesomeParameter: 444 });
   };
   const getClickPhone2 = () => {
     ym("getClickPhone2", "/cart");
