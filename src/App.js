@@ -1,12 +1,12 @@
 import "./App.css";
 import HomePage from "./HomePage";
 import { ChakraProvider } from "@chakra-ui/react";
-// import { YMInitializer } from "react-yandex-metrika";
+
+console.log("v.0.0.3");
 
 function App({ pageProps }) {
   return (
     <div className="App">
-      {/* <YMInitializer accounts={[85977485]} /> */}
       <ChakraProvider>
         <HomePage />
       </ChakraProvider>

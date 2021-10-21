@@ -2,7 +2,6 @@ import React from "react";
 import "./HomePage.css";
 
 import { Helmet } from "react-helmet";
-// import ym from "react-yandex-metrika";
 
 import logo from "../assets/logo.svg";
 import { ReactComponent as Chat } from "../assets/Chat.svg";
@@ -33,43 +32,26 @@ import { ReactComponent as Card } from "../assets/BenefitCard.svg";
 import { ReactComponent as Rating } from "../assets/BenefitRating.svg";
 import { ReactComponent as Money } from "../assets/BenefitMoney.svg";
 import { ReactComponent as PhoneBack } from "../assets/PhoneBack.svg";
-// import { ReactComponent as Phone } from "../assets/Phone.svg";
-// import { ReactComponent as Phone2 } from "../assets/Phone2.svg";
 import { ReactComponent as BSign } from "../assets/BlockSign.svg";
 import { ReactComponent as BSign2 } from "../assets/BlockSign2.svg";
 import { ReactComponent as Issue } from "../assets/Issue.svg";
 import ModalHomePage from "../components/Modal";
 import PdfModal from "../components/Pdf";
 
-// import { YMInitializer } from "react-yandex-metrika";
-
-console.log("v.0.0.2");
-
 function HomePage() {
   const getClick = () => {
-    // ym("getClick", "/cart");
-    // ym("getClick", "whateverGoal", { awesomeParameter: 41 });
-    // ym(88005553535, "reachGoal", "TARGET_NAME");
-    // ym(85977485, "reachGoal", "88005553535");
-    // ym(XXXXXX, 'reachGoal', 'goal')
-    // ym(85977485,'reachGoal','88005553535')
+    // https://www.youtube.com/watch?v=_SCMoKB5Nko&t=464s&ab_channel=ITLeaderAssistant
+    window.ym(85672684, "reachGoal", "buttonpoluchit1");
   };
   const getClickPhone = () => {
-    // ym("getClickPhone", "/cart");
-    // ym("getClickPhone", "whateverGoal", { awesomeParameter: 42 });
-    window.ym(85977485, "reachGoal", "clickTopPhone");
+    window.ym(85672684, "reachGoal", "buttonpoluchit1");
   };
 
   const getClick2 = () => {
-    // ym("getClick2", "/cart");
-    // ym("getClick2", "whateverGoal", { awesomeParameter: 43 });
-    // ym(85977485, "reachGoal2", "88005553536");
-    // ym("88005553536", "88005553536", { awesomeParameter: 444 });
+    window.ym(85672684, "reachGoal", "buttonpoluchit2");
   };
   const getClickPhone2 = () => {
-    // ym("getClickPhone2", "/cart");
-    // ym("getClickPhone2", "whateverGoalhitPhone", { awesomeParameter: 44 });
-    // ym(85977485, "reachGoal", "test");
+    window.ym(85672684, "reachGoal", "buttonpoluchit2");
   };
 
   return (
@@ -132,14 +114,7 @@ function HomePage() {
               Возьми&nbsp;до&nbsp;30&nbsp;000&nbsp;рублей&nbsp;за&nbsp;несколько
               минут&nbsp;даже&nbsp;с&nbsp;плохой&nbsp;кредитной&nbsp;историей
             </div>
-            {/* <div className="button_primary">Получить</div> */}
-            {/* <div className="modalHomePage" onClick={() => getClick()}> */}
-            <div
-              className="modalHomePage"
-              onClick={() => {
-                window.ym(85977485, "reachGoal", "clickTop");
-              }}
-            >
+            <div className="modalHomePage" onClick={() => getClick()}>
               <ModalHomePage />
             </div>
           </div>
@@ -159,7 +134,6 @@ function HomePage() {
           <br />
           минут&nbsp;даже&nbsp;с&nbsp;плохой&nbsp;кредитной&nbsp;историей
         </div>
-        {/* <div className="button_primary_Mobile">Получить</div> */}
         <div className="modalHomePage_Mobile" onClick={() => getClickPhone()}>
           <ModalHomePage />
         </div>
@@ -533,7 +507,6 @@ function HomePage() {
             в&nbsp;Ликвид&nbsp;кредит
           </div>
           <div className="button_phone">
-            {/* <div className="button_primary button_white">Получить</div> */}
             <div
               className="modalHomePage modalHomePage_white"
               onClick={() => getClick2()}

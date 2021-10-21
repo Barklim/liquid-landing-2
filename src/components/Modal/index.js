@@ -66,10 +66,7 @@ function ModalHomePage() {
 
     setAlert("lq__alert displayVisisble");
 
-    // ym("modalSend", "/cart");
-    // ym("modalSend", "whateverGoal", { awesomeParameter: 40 });
-    // onClick={() => {}}
-    window.ym(85977485, "reachGoal", "modalClick");
+    window.ym(85672684, "reachGoal", "send");
   };
   // console.log("errors");
   // console.log(errors);
